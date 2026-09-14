@@ -1,0 +1,23 @@
+[project]
+name = "ezconv"
+version = "0.1.0"
+description = "easy conversion service for and between different file formats."
+authors = [
+    {name = "shantanurahut@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django (>=6.1.1,<7.0.0)",
+    "djangorestframework (>=3.18.1,<4.0.0)",
+    "gunicorn (>=26.2.0,<27.0.0)",
+    "psycopg[binary] (>=3.3.5,<4.0.0)",
+    "celery[redis] (>=5.6.3,<6.0.0)"
+]
+package-mode = false
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
